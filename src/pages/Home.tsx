@@ -96,7 +96,11 @@ const Home = () => {
 
       <Box sx={{ bgcolor: 'background.default', py: { xs: 8, md: 12 } }}>
         <Container maxWidth="lg">
-          <Grid container spacing={4}>
+          <Grid 
+            container 
+            spacing={4} 
+            justifyContent="center"
+          >
             <Grid item xs={12} md={4}>
               <FeatureCard>
                 <Typography variant="h5" gutterBottom sx={{ mb: 2, color: 'primary.main' }}>
@@ -137,4 +141,4 @@ const Home = () => {
   );
 };
 
-export default Home; 
+export default Home;
