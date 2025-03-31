@@ -8,25 +8,25 @@ const services = [
   {
     title: 'Lawn Mowing',
     description: 'Professional lawn mowing services with state-of-the-art equipment for a perfectly manicured lawn.',
-    image: 'https://images.unsplash.com/photo-1624894992636-5cbbe6e5f200?auto=format&fit=crop&q=80&w=800',
+    image: 'https://www.simple-solutions.ca/wp-content/uploads/2022/03/6-useful-lawn-mowing-tips-for-the-spring-season-f.jpg',
     icon: LawnMowerIcon,
   },
   {
     title: 'Fertilization',
     description: 'Custom fertilization programs to keep your lawn healthy and vibrant throughout the year.',
-    image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&q=80&w=800',
+    image: 'https://s42814.pcdn.co/wp-content/uploads/2023/10/Fertilizer_iStock_184300332-scaled-1.jpg.optimal.jpg',
     icon: FertilizerIcon,
   },
   {
     title: 'Weed Control',
     description: 'Effective weed control solutions to maintain a pristine lawn without unwanted growth.',
-    image: 'https://images.unsplash.com/photo-1619506147154-01717498fc26?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.pexels.com/photos/26827231/pexels-photo-26827231/free-photo-of-a-wheelbarrow-in-a-garden.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     icon: WeedIcon,
   },
   {
     title: 'Aeration',
     description: 'Lawn aeration services to improve soil health and promote better grass growth.',
-    image: 'https://images.unsplash.com/photo-1623775944460-7d75e1f90ff9?auto=format&fit=crop&q=80&w=800',
+    image: 'https://unicutters.ca/wp-content/uploads/2022/03/jims-mowing-lawn-aeration-services.jpg',
     icon: AerationIcon,
   },
 ];

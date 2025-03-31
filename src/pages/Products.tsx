@@ -24,7 +24,7 @@ const products = [
     title: 'Plant Disease Identifier',
     description: 'Digital tool to identify common lawn diseases and their treatments.',
     price: '$24.99',
-    image: 'https://images.unsplash.com/photo-1635176502606-994fd5b431b5?auto=format&fit=crop&q=80&w=800',
+    image: 'https://www.pennington.com/-/media/Project/OneWeb/Pennington/Images/blog/seed/How-to-Bring-Your0-Lawn-Back-to-Life-in-5-Simple-Steps/OG-restore-dead-grass.jpg',
     icon: BugReportIcon,
   },
   {
