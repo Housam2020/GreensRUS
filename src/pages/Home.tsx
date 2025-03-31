@@ -1,7 +1,7 @@
 import { Box, Container, Typography, Button, Grid, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-const HeroSection = styled(Box)(({ theme }) => ({
+const HeroSection = styled(Box)(() => ({
   position: 'relative',
   width: '100vw',
   height: '100vh',
@@ -25,8 +25,8 @@ const HeroSection = styled(Box)(({ theme }) => ({
   },
 }));
 
-const FeatureCard = styled(Paper)(({ theme }) => ({
-  padding: theme.spacing(4),
+const FeatureCard = styled(Paper)(() => ({
+  padding: 32,
   height: '100%',
   display: 'flex',
   flexDirection: 'column',
