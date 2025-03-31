@@ -11,7 +11,7 @@ const About = () => {
       </Typography>
 
       <Grid container spacing={4} sx={{ mt: 4 }}>
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Paper sx={{ p: 4 }}>
             <Typography variant="h5" gutterBottom>
               Our Story
@@ -29,7 +29,7 @@ const About = () => {
           </Paper>
         </Grid>
 
-        <Grid xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Paper sx={{ p: 4 }}>
             <Typography variant="h5" gutterBottom>
               Our Mission
@@ -47,7 +47,7 @@ const About = () => {
           </Paper>
         </Grid>
 
-        <Grid xs={12}>
+        <Grid item xs={12}>
           <Paper sx={{ p: 4, mt: 4 }}>
             <Typography variant="h5" gutterBottom align="center">
               Our Team
