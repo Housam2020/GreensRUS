@@ -1,5 +1,6 @@
 import { Box, Container, Typography, Button, Grid, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = styled(Box)(() => ({
   position: 'relative',
@@ -41,6 +42,12 @@ const FeatureCard = styled(Paper)(() => ({
 }));
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    navigate('/contact');
+  };
+
   return (
     <Box sx={{ width: '100%', overflow: 'hidden' }}>
       <HeroSection>
@@ -81,6 +88,7 @@ const Home = () => {
               variant="contained"
               color="primary"
               size="large"
+              onClick={handleGetStarted}
               sx={{ 
                 py: 2,
                 px: 6,

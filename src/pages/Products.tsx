@@ -4,6 +4,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import BugReportIcon from '@mui/icons-material/BugReport';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { useNavigate } from 'react-router-dom';
 
 const products = [
   {
@@ -37,6 +38,13 @@ const products = [
 ];
 
 const Products = () => {
+  const navigate = useNavigate();
+
+  const handlePurchase = (productTitle: string, price: string) => {
+    // Navigate to contact page with product information
+    navigate('/contact', { state: { product: productTitle, price: price } });
+  };
+
   return (
     <Box 
       sx={{ 
@@ -168,6 +176,7 @@ const Products = () => {
                       color="primary"
                       fullWidth
                       startIcon={<ShoppingCartIcon />}
+                      onClick={() => handlePurchase(product.title, product.price)}
                       sx={{
                         mt: 'auto',
                         py: 1.5,

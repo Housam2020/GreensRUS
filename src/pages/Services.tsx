@@ -3,6 +3,7 @@ import LawnMowerIcon from '@mui/icons-material/Grass';
 import FertilizerIcon from '@mui/icons-material/Spa';
 import WeedIcon from '@mui/icons-material/PestControl';
 import AerationIcon from '@mui/icons-material/Agriculture';
+import { useNavigate } from 'react-router-dom';
 
 const services = [
   {
@@ -32,6 +33,13 @@ const services = [
 ];
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const handleLearnMore = (serviceTitle: string) => {
+    // Navigate to contact page with service information
+    navigate('/contact', { state: { service: serviceTitle } });
+  };
+
   return (
     <Box 
       sx={{ 
@@ -144,6 +152,7 @@ const Services = () => {
                       variant="contained"
                       color="primary"
                       fullWidth
+                      onClick={() => handleLearnMore(service.title)}
                       sx={{
                         mt: 'auto',
                         py: 1.5,
